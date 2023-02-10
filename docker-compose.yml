@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  project-web-service:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - '8999:8999'
+    expose:
+      - '8999'
+    tty: true
